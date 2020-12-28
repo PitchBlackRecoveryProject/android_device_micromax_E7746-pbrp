@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/omni_lancelot.mk
+   $(LOCAL_DIR)/omni_E7746.mk
 
-COMMON_LUNCH_CHOICES := omni_lancelot-eng
+COMMON_LUNCH_CHOICES := omni_E7746-eng

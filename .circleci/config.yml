@@ -1,0 +1,37 @@
+version: 2.1
+executors:
+  worker:
+    docker:
+      - image: fr3akyphantom/droid-builder:latest
+        auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASSWORD
+jobs:
+  build:
+    executor: worker
+    environment:
+      MANIFEST_BRANCH: 'android-10.0'
+      VENDOR: 'micromax'
+      CODENAME: 'E7746'
+      BUILD_LINK: '#'
+      FLAVOR: 'eng'
+      TEST_BUILD: 'true'
+      MAINTAINER: 'PBRP Team'
+      CHANGELOG: |
+        - Initial Build
+    working_directory: /home/builder/pitchblack
+    steps:
+      - run:
+          name: AIO Build
+          command: |
+            wget -q https://raw.githubusercontent.com/PitchBlackRecoveryProject/vendor_utils/pb/pb_deploy_from_link.sh
+            source pb_deploy_from_link.sh
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: 'release'
+          context: org-global

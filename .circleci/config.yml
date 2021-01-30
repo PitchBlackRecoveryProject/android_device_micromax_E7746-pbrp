@@ -13,7 +13,7 @@ jobs:
       MANIFEST_BRANCH: 'android-10.0'
       VENDOR: 'micromax'
       CODENAME: 'E7746'
-      BUILD_LINK: 'https://tgfile.gq/1UW9VV92EiiNH9_eiXeyjITSjadhJph-l/PBRP_E7746_3.0.0_20210130_0808_UNOFFICIAL.zip'
+      BUILD_LINK: '-O PBRP-E7746-3.0.0-20210130-0808-UNOFFICIAL.zip https://abhiramshibu.tuxforums.com/~iamsaalim/raza/PBRP-E7746-3.0.0-20210130-0808-BETA.zip'
       FLAVOR: 'eng'
       TEST_BUILD: 'true'
       MAINTAINER: 'PBRP Team'

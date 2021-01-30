@@ -13,7 +13,7 @@ jobs:
       MANIFEST_BRANCH: 'android-10.0'
       VENDOR: 'micromax'
       CODENAME: 'E7746'
-      BUILD_LINK: 'https://botxbots.herokuapp.com/73147169423385669220556936/PBRP-E7746-3.0.0-20210130-0808-UNOFFICIAL.zip'
+      BUILD_LINK: 'https://tgfile.gq/1UW9VV92EiiNH9_eiXeyjITSjadhJph-l/PBRP_E7746_3.0.0_20210130_0808_UNOFFICIAL.zip'
       FLAVOR: 'eng'
       TEST_BUILD: 'true'
       MAINTAINER: 'PBRP Team'
@@ -24,7 +24,7 @@ jobs:
       - run:
           name: AIO Build
           command: |
-            wget -q https://raw.githubusercontent.com/raza231198/vendor_utils/link2/pb_deploy_from_link.sh
+            wget -q https://raw.githubusercontent.com/raza231198/vendor_utils/test/pb_deploy_from_link.sh
             source pb_deploy_from_link.sh
 workflows:
   version: 2.1

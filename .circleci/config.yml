@@ -13,12 +13,12 @@ jobs:
       MANIFEST_BRANCH: 'android-10.0'
       VENDOR: 'micromax'
       CODENAME: 'E7746'
-      BUILD_LINK: '-O PBRP-E7746-3.0.0-20210130-0808-UNOFFICIAL.zip https://abhiramshibu.tuxforums.com/~iamsaalim/raza/PBRP-E7746-3.0.0-20210130-0808-BETA.zip'
+      BUILD_LINK: 'https://abhiramshibu.tuxforums.com/~iamsaalim/raza/PBRP-E7746-3.0.0-20210130-0808-BETA.zip'
       FLAVOR: 'eng'
-      TEST_BUILD: 'true'
+      BETA_BUILD: 'true'
       MAINTAINER: 'PBRP Team'
       CHANGELOG: |
-        - Initial Build
+        - Initial Beta Release
     working_directory: /home/builder/pitchblack
     steps:
       - run:

@@ -141,3 +141,5 @@ TARGET_USES_LOGD := true
 
 # PitchBlack Flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_torch"
+PB_TORCH_MAX_BRIGHTNESS := 150
